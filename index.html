@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="S. Vijaya Rajalakshmi – Data Analyst & AI Enthusiast. Transforming Data into Smart Decisions." />
+  <meta name="keywords" content="Data Analyst, AI, Machine Learning, Power BI, Python, SQL, Portfolio" />
+  <meta name="author" content="S. Vijaya Rajalakshmi" />
+  <meta property="og:title" content="S. Vijaya Rajalakshmi | Data Analyst & AI Enthusiast" />
+  <meta property="og:description" content="Transforming Data into Smart Decisions" />
+  <meta property="og:type" content="website" />
+  <title>S. Vijaya Rajalakshmi | Data Analyst & AI Enthusiast</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>SVR<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#dashboard" class="nav-link">Dashboards</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span> Available for opportunities
+      </div>
+      <h1 class="hero-name">
+        <span class="name-line">S. Vijaya</span>
+        <span class="name-line accent-line">Rajalakshmi</span>
+      </h1>
+      <div class="hero-title">
+        <span class="title-text" id="typedText"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-tagline">"Transforming Data into Smart Decisions"</p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="6">0</span>+
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="4">0</span>+
+          <span class="stat-label">Tools Mastered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="100">0</span>+
+          <span class="stat-label">Students Taught</span>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <span>View Projects</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <span>Contact Me</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orbital-ring ring-1"></div>
+      <div class="orbital-ring ring-2"></div>
+      <div class="orbital-ring ring-3"></div>
+      <div class="hero-avatar">
+        <div class="avatar-inner">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="orbit-dot dot-1"><i class="fab fa-python"></i></div>
+        <div class="orbit-dot dot-2"><i class="fas fa-database"></i></div>
+        <div class="orbit-dot dot-3"><i class="fas fa-brain"></i></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card glass">
+            <div class="about-icon-grid">
+              <div class="icon-cell"><i class="fas fa-chart-bar"></i><span>Analytics</span></div>
+              <div class="icon-cell"><i class="fab fa-python"></i><span>Python</span></div>
+              <div class="icon-cell"><i class="fas fa-database"></i><span>SQL</span></div>
+              <div class="icon-cell"><i class="fas fa-robot"></i><span>AI / ML</span></div>
+            </div>
+          </div>
+          <div class="about-quote glass">
+            <i class="fas fa-quote-left quote-mark"></i>
+            <p>Data is the new oil — I help businesses refine it into actionable gold.</p>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="about-intro">
+            I'm a <strong>Data Analyst & AI Enthusiast</strong> with a passion for uncovering hidden patterns in data and building intelligent solutions that drive real business value.
+          </p>
+          <p>
+            With hands-on experience in <strong>Excel, Power BI, SQL, and Python</strong>, I bridge the gap between raw data and meaningful decisions. I've designed interactive dashboards, built AI-powered tools, and guided students through real-world data projects.
+          </p>
+          <p>
+            My approach is rooted in <strong>analytical thinking</strong> — I don't just present numbers, I tell the story behind them. Whether it's predicting student performance, visualizing sales trends, or building a Tamil-language AI assistant, I bring creativity and rigor to every challenge.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-chip"><i class="fas fa-check-circle"></i> Data-Driven Mindset</div>
+            <div class="highlight-chip"><i class="fas fa-check-circle"></i> Problem Solver</div>
+            <div class="highlight-chip"><i class="fas fa-check-circle"></i> Educator & Mentor</div>
+            <div class="highlight-chip"><i class="fas fa-check-circle"></i> AI Enthusiast</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What I Know</span>
+        <h2 class="section-title">Skills & Tools</h2>
+      </div>
+      <div class="skills-categories">
+
+        <div class="skill-category glass">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-chart-pie"></i></div>
+            <h3>Data Analysis</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Microsoft Excel</span><span class="skill-pct">92%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Power BI</span><span class="skill-pct">88%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Data Visualization</span><span class="skill-pct">90%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-code"></i></div>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Python</span><span class="skill-pct">85%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Pandas / NumPy</span><span class="skill-pct">82%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Scikit-learn</span><span class="skill-pct">75%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-database"></i></div>
+            <h3>Database</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>SQL</span><span class="skill-pct">87%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="87"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>MySQL</span><span class="skill-pct">83%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="83"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Data Modeling</span><span class="skill-pct">78%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="78"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass">
+          <div class="category-header">
+            <div class="category-icon"><i class="fas fa-brain"></i></div>
+            <h3>AI & Concepts</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Machine Learning</span><span class="skill-pct">80%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Data Cleaning</span><span class="skill-pct">93%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="93"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Business Intelligence</span><span class="skill-pct">88%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tools-strip">
+        <span class="tools-label">Also familiar with:</span>
+        <div class="tool-tags">
+          <span class="tool-tag">Matplotlib</span>
+          <span class="tool-tag">Seaborn</span>
+          <span class="tool-tag">Streamlit</span>
+          <span class="tool-tag">Jupyter</span>
+          <span class="tool-tag">Google Colab</span>
+          <span class="tool-tag">MS Office</span>
+          <span class="tool-tag">DAX</span>
+          <span class="tool-tag">NLP</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI / ML</button>
+        <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+        <button class="filter-btn" data-filter="analysis">Analysis</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card glass" data-category="ai">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-comments"></i></div>
+            <div class="project-tags">
+              <span class="ptag">AI</span><span class="ptag">NLP</span>
+            </div>
+          </div>
+          <h3 class="project-title">AI-Powered Tamil Business Decision Assistant</h3>
+          <p class="project-desc">A conversational AI assistant that helps Tamil-speaking entrepreneurs make data-driven business decisions using natural language processing.</p>
+          <div class="project-stack">
+            <span>Python</span><span>NLP</span><span>Streamlit</span><span>ML</span>
+          </div>
+          <div class="project-impact">
+            <i class="fas fa-bolt"></i>
+            <span>Bridging language barrier for 50M+ Tamil speakers in business analytics</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="pbtn pBtn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="#" class="pBtn pBtn-ghost"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card glass" data-category="ai">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-heart-pulse"></i></div>
+            <div class="project-tags">
+              <span class="ptag">AI</span><span class="ptag">EdTech</span>
+            </div>
+          </div>
+          <h3 class="project-title">Emotion-Based Study Companion</h3>
+          <p class="project-desc">An intelligent study companion that detects a student's emotional state and adapts learning content accordingly to maximize engagement and retention.</p>
+          <div class="project-stack">
+            <span>Python</span><span>Computer Vision</span><span>ML</span><span>OpenCV</span>
+          </div>
+          <div class="project-impact">
+            <i class="fas fa-bolt"></i>
+            <span>Adaptive learning increases student engagement by up to 40%</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="pBtn pBtn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="#" class="pBtn pBtn-ghost"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card glass" data-category="dashboard">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="project-tags">
+              <span class="ptag">Dashboard</span><span class="ptag">BI</span>
+            </div>
+          </div>
+          <h3 class="project-title">VRL Salesight – Sales Dashboard</h3>
+          <p class="project-desc">A comprehensive Power BI sales analytics dashboard providing real-time visibility into KPIs, regional trends, and product performance for VRL logistics.</p>
+          <div class="project-stack">
+            <span>Power BI</span><span>DAX</span><span>SQL</span><span>Excel</span>
+          </div>
+          <div class="project-impact">
+            <i class="fas fa-bolt"></i>
+            <span>Reduced reporting time by 60% and improved decision-making speed</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="pBtn pBtn-primary"><i class="fas fa-external-link-alt"></i> View Dashboard</a>
+            <a href="#" class="pBtn pBtn-ghost"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card glass" data-category="ai">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-recycle"></i></div>
+            <div class="project-tags">
+              <span class="ptag">Mobile</span><span class="ptag">Sustainability</span>
+            </div>
+          </div>
+          <h3 class="project-title">Reward-Based Plastic Collection App</h3>
+          <p class="project-desc">A gamified mobile application that incentivizes plastic waste collection through reward points, driving community-level environmental impact.</p>
+          <div class="project-stack">
+            <span>Python</span><span>Data Analysis</span><span>UI Design</span>
+          </div>
+          <div class="project-impact">
+            <i class="fas fa-bolt"></i>
+            <span>Gamification model encouraging sustainable behavior at scale</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="pBtn pBtn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="#" class="pBtn pBtn-ghost"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card glass" data-category="analysis">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-store"></i></div>
+            <div class="project-tags">
+              <span class="ptag">Analysis</span><span class="ptag">Business</span>
+            </div>
+          </div>
+          <h3 class="project-title">Sales Data Analysis Project</h3>
+          <p class="project-desc">End-to-end sales data analysis pipeline uncovering seasonality patterns, customer segmentation, and revenue growth opportunities from raw transactional data.</p>
+          <div class="project-stack">
+            <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Excel</span>
+          </div>
+          <div class="project-impact">
+            <i class="fas fa-bolt"></i>
+            <span>Identified 3 untapped revenue segments worth 22% additional growth</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="pBtn pBtn-primary"><i class="fas fa-external-link-alt"></i> View Analysis</a>
+            <a href="#" class="pBtn pBtn-ghost"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card glass" data-category="ai">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="project-tags">
+              <span class="ptag">ML</span><span class="ptag">Education</span>
+            </div>
+          </div>
+          <h3 class="project-title">Student Performance Prediction</h3>
+          <p class="project-desc">A machine learning model that predicts student academic performance using behavioral, attendance, and historical grade data to enable early intervention.</p>
+          <div class="project-stack">
+            <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Seaborn</span>
+          </div>
+          <div class="project-impact">
+            <i class="fas fa-bolt"></i>
+            <span>85% prediction accuracy enabling proactive student support</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="pBtn pBtn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="#" class="pBtn pBtn-ghost"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">My Journey</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="marker-inner"><i class="fas fa-chalkboard-teacher"></i></div>
+          </div>
+          <div class="timeline-content glass">
+            <div class="timeline-header">
+              <div>
+                <h3>Programming & Data Instructor</h3>
+                <span class="timeline-org">Apollo Institute of Computer Studies</span>
+              </div>
+              <span class="timeline-date">2023 – Present</span>
+            </div>
+            <p>Delivered hands-on training in Python programming, SQL databases, and data analysis tools to undergraduate and post-graduate students. Designed curriculum that integrates real-world datasets and project-based learning.</p>
+            <div class="timeline-highlights">
+              <div class="th-item"><i class="fas fa-users"></i> 100+ Students Mentored</div>
+              <div class="th-item"><i class="fas fa-project-diagram"></i> 10+ Live Projects Guided</div>
+              <div class="th-item"><i class="fas fa-star"></i> 4.8/5 Student Rating</div>
+            </div>
+            <div class="timeline-tags">
+              <span>Python</span><span>SQL</span><span>Power BI</span><span>Excel</span><span>Data Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DASHBOARD SHOWCASE -->
+  <section class="dashboard section" id="dashboard">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Visual Storytelling</span>
+        <h2 class="section-title">Dashboard Showcase</h2>
+      </div>
+      <p class="section-sub">Transforming raw numbers into interactive, decision-ready visual stories using Power BI and Python.</p>
+      <div class="dashboard-grid">
+
+        <div class="dash-card glass featured">
+          <div class="dash-preview">
+            <div class="mock-chart bar-chart">
+              <div class="chart-title">Monthly Sales Revenue</div>
+              <div class="bar-group">
+                <div class="bar-col"><div class="bar" style="height:55%"></div><span>Jan</span></div>
+                <div class="bar-col"><div class="bar" style="height:70%"></div><span>Feb</span></div>
+                <div class="bar-col"><div class="bar" style="height:45%"></div><span>Mar</span></div>
+                <div class="bar-col"><div class="bar" style="height:85%"></div><span>Apr</span></div>
+                <div class="bar-col"><div class="bar" style="height:65%"></div><span>May</span></div>
+                <div class="bar-col"><div class="bar" style="height:90%"></div><span>Jun</span></div>
+                <div class="bar-col"><div class="bar accent-bar" style="height:100%"></div><span>Jul</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="dash-info">
+            <h3>VRL Salesight Dashboard</h3>
+            <p>Real-time sales KPIs, regional breakdown, and product performance tracking.</p>
+            <div class="dash-tools"><span>Power BI</span><span>DAX</span><span>SQL</span></div>
+          </div>
+        </div>
+
+        <div class="dash-card glass">
+          <div class="dash-preview">
+            <div class="mock-chart donut-chart">
+              <div class="chart-title">Performance Distribution</div>
+              <div class="donut-visual">
+                <svg viewBox="0 0 100 100" class="donut-svg">
+                  <circle cx="50" cy="50" r="35" fill="none" stroke="var(--accent)" stroke-width="12" stroke-dasharray="88 132" stroke-dashoffset="22" />
+                  <circle cx="50" cy="50" r="35" fill="none" stroke="var(--accent2)" stroke-width="12" stroke-dasharray="55 165" stroke-dashoffset="-66" />
+                  <circle cx="50" cy="50" r="35" fill="none" stroke="var(--glass-border)" stroke-width="12" stroke-dasharray="33 187" stroke-dashoffset="-121" />
+                </svg>
+                <div class="donut-center">85%<br><small>Accuracy</small></div>
+              </div>
+              <div class="donut-legend">
+                <span><i style="background:var(--accent)"></i>Pass</span>
+                <span><i style="background:var(--accent2)"></i>At Risk</span>
+                <span><i style="background:var(--glass-border)"></i>Fail</span>
+              </div>
+            </div>
+          </div>
+          <div class="dash-info">
+            <h3>Student Performance Analytics</h3>
+            <p>Predictive model visualizing student outcomes and intervention areas.</p>
+            <div class="dash-tools"><span>Python</span><span>Matplotlib</span><span>Seaborn</span></div>
+          </div>
+        </div>
+
+        <div class="dash-card glass">
+          <div class="dash-preview">
+            <div class="mock-chart line-chart">
+              <div class="chart-title">Trend Analysis</div>
+              <svg viewBox="0 0 200 100" class="line-svg">
+                <defs>
+                  <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.4"/>
+                    <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M10,80 C30,70 50,40 70,50 S110,20 130,30 S170,15 190,10" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M10,80 C30,70 50,40 70,50 S110,20 130,30 S170,15 190,10 L190,100 L10,100 Z" fill="url(#lineGrad)"/>
+                <circle cx="190" cy="10" r="4" fill="var(--accent)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="dash-info">
+            <h3>Sales Trend Analysis</h3>
+            <p>Time-series forecasting and seasonal pattern detection for retail data.</p>
+            <div class="dash-tools"><span>Python</span><span>Excel</span><span>Pandas</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STRENGTHS -->
+  <section class="strengths section" id="strengths">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Core Attributes</span>
+        <h2 class="section-title">Strengths</h2>
+      </div>
+      <div class="strengths-grid">
+        <div class="strength-card glass">
+          <div class="strength-icon"><i class="fas fa-microscope"></i></div>
+          <h3>Analytical Thinking</h3>
+          <p>Breaking complex problems into structured, data-backed insights that drive clarity and confidence in decision-making.</p>
+        </div>
+        <div class="strength-card glass">
+          <div class="strength-icon"><i class="fas fa-puzzle-piece"></i></div>
+          <h3>Problem Solving</h3>
+          <p>Designing innovative solutions from first principles — whether it's a predictive model or a process optimization strategy.</p>
+        </div>
+        <div class="strength-card glass">
+          <div class="strength-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>Business Insights</h3>
+          <p>Translating technical findings into strategic recommendations that resonate with stakeholders at all levels.</p>
+        </div>
+        <div class="strength-card glass">
+          <div class="strength-icon"><i class="fas fa-comments"></i></div>
+          <h3>Communication</h3>
+          <p>Presenting data stories clearly and compellingly — turning numbers into narratives that inspire action.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">I'm always open to discussing data projects, job opportunities, or potential collaborations. Let's connect!</p>
+          <div class="contact-items">
+            <a href="mailto:vviji474414@gmail.com" class="contact-item glass">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">Email</span>
+                <span class="ci-val">vviji474414@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:7904331539" class="contact-item glass">
+              <div class="ci-icon"><i class="fas fa-phone"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">Phone</span>
+                <span class="ci-val">+91 7904331539</span>
+              </div>
+            </a>
+            <div class="contact-item glass">
+              <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">Location</span>
+                <span class="ci-val">Tamil Nadu, India</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" class="social-btn glass" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn glass" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-btn glass" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <form class="contact-form glass" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Collaboration" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo"><span class="logo-bracket">&lt;</span>SVR<span class="logo-bracket">/&gt;</span></a>
+          <p>Data Analyst & AI Enthusiast<br/>Transforming Data into Smart Decisions</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-connect">
+          <h4>Connect</h4>
+          <a href="mailto:vviji474414@gmail.com"><i class="fas fa-envelope"></i> vviji474414@gmail.com</a>
+          <a href="tel:7904331539"><i class="fas fa-phone"></i> +91 7904331539</a>
+          <div class="footer-socials">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 S. Vijaya Rajalakshmi. Crafted with <i class="fas fa-heart"></i> and Data.</p>
+        <a href="#home" class="back-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
